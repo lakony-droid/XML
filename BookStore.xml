@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="BookStore.css" type="text/css"?>
+<bookstore>
+    <book category ="Fantacy">
+
+        <title lang ="English">The Forgotten Princess</title>
+        <ISBN>02233</ISBN>
+        <author>James Smith</author>
+        <year>2022</year>
+        <price>UGX 50000</price>
+    </book>
+
+    <book category ="Horror">
+        <title lang ="English">The quiet place</title>
+        <ISBN>02235</ISBN>
+        <author>Jed Marco</author>
+        <year>2019</year>
+        <price>UGX 70000</price>
+    </book>
+
+    <book category ="Thriller">
+        <title lang = "Spanish">The Beach house</title>
+        <ISBN>02234</ISBN>
+        <author>Delgardo Ramuse</author>
+        <year>2026</year>
+        <price>UGX 90000</price>
+    </book>
+</bookstore>
