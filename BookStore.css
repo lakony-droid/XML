@@ -1,0 +1,42 @@
+BusinessCard{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 30px;
+    border: 1px solid rgba(71, 0, 0, 0.662);
+    background-color: rgba(139, 159, 218, 0.626);
+    width: 400px;
+    display: block;
+    margin: 10px;
+}
+
+BusinessCard> name{
+ display: block;
+ color: rgba(73, 0, 141, 0.711);
+ font-weight: bold;
+ font-size: 120%;
+}
+
+BusinessCard> phone{
+ display: block;
+ color: rgba(73, 0, 141, 0.711);
+ margin-top: 9px;
+ font-size: 100%;
+}
+
+BusinessCard> signature{
+    display: block;
+    color: rgba(144, 23, 2, 0.987);
+    margin-top: 10px;
+    font-size: 100%;
+}
+
+BusinessCard> email{
+    display: block;
+    color: rgba(73, 0, 141, 0.711);
+    margin-top: 10px;
+    font-size: 100%;
+}
+
+email::before{content: "Email: ";}
+phone::before{content: attr(type) ": ";}
+signature::before{content: "Signature: ";}
