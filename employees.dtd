@@ -1,0 +1,15 @@
+<!ELEMENT employees (employee+)>
+<!ELEMENT employee (name, position, salary)>
+<!ATTLIST employee 
+    id ID #REQUIRED
+    department (HR | IT | Finance | Marketing) #REQUIRED>
+
+<!ELEMENT name (firstName, lastName)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+
+<!ELEMENT position (#PCDATA)>
+
+<!ELEMENT salary (#PCDATA)>
+<!ATTLIST salary 
+    currency CDATA #REQUIRED>
