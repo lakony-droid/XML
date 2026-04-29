@@ -1,50 +1,85 @@
 /* College.css */
 
-/* The main container */
+/* Main Page Container */
 college {
     display: block;
-    background-color: #f4f4f9;
-    padding: 30px;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
-/* Student and Course group containers */
-students, courses {
+/* Student Information Card */
+students {
     display: block;
-    background: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    background: #ffffff;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 8px solid #6366f1; /* Indigo Accent */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
-/* Name and Header styling */
+/* Course List Card */
+courses {
+    display: block;
+    background: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 8px solid #10b981; /* Emerald Accent */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Name Styling */
 fullName {
     display: block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 15px;
 }
 
-firstName, lastName {
-    display: inline;
-}
+firstName { color: #6366f1; }
+lastName { color: #1e293b; }
 
-/* Metadata rows */
+/* Data Rows (RegNo, DOB, Courses) */
 regNo, DateofBirth, courseName, creditHours {
     display: block;
-    margin-top: 5px;
-    color: #555;
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #475569;
 }
 
-/* Individual course block */
+/* Adding Labels with Color */
+regNo::before { content: "Registration: "; font-weight: bold; color: #6366f1; }
+DateofBirth::before { content: "Birthday: "; font-weight: bold; color: #6366f1; }
+
+/* Individual Course Styling */
 course {
     display: block;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
+    padding: 15px;
+    background: #f8fafc;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
 }
 
-course:last-child {
-    border-bottom: none;
+courseName {
+    font-weight: bold;
+    color: #064e3b; /* Dark Green */
+    font-size: 1.1rem;
+}
+
+creditHours::before { content: "Credits: "; font-weight: bold; }
+creditHours {
+    display: inline-block;
+    background: #d1fae5;
+    color: #065f46;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 5px;
 }
