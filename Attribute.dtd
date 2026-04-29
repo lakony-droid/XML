@@ -1,1 +1,7 @@
-
+<!ELEMENT root (users+)>
+<!ATTLIST users
+  id ID #REQUIRED <!----ID means it is supposed to be unique---->
+  role CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
