@@ -1,93 +1,135 @@
 college {
     display: block;
-    background-color: #f8fafc;
-    font-family: 'Inter', -apple-system, sans-serif;
-    padding: 40px 20px;
-    color: #1e293b;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 50px 20px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Section Containers (Students & Courses) */
-students, courses {
+/* Container for Students Section */
+students {
     display: block;
-    max-width: 600px;
+    background: rgba(255, 255, 255, 0.95);
+    max-width: 700px;
     margin: 0 auto 30px auto;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Header for Sections */
+/* Accent bar for the student card */
 students::before {
-    content: "Student Profile";
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #00dbde;
+}
+
+/* Header Styling */
+fullName {
     display: block;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #6366f1;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+firstName {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #4a5568;
+}
+
+lastName {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #2d3748;
+    margin-left: 10px;
+}
+
+/* Details Section */
+regNo, DateofBirth {
+    display: inline-block;
+    background: #edf2f7;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    color: #4a5568;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+regNo::before { content: "ID: "; color: #718096; }
+DateofBirth::before { content: "📅 "; }
+
+/* Courses Section Styling */
+courses {
+    display: block;
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
 }
 
 courses::before {
-    content: "Enrolled Courses";
+    content: "ACADEMIC COURSES";
     display: block;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #0ea5e9;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 15px;
-}
-
-/* Full Name Styling */
-fullName {
-    display: flex;
-    gap: 8px;
-    font-size: 1.8rem;
+    color: white;
     font-weight: 800;
-    color: #0f172a;
-    margin-bottom: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
-firstName, lastName { display: inline; }
-
-/* Student Details */
-regNo, DateofBirth {
-    display: block;
-    font-size: 0.95rem;
-    color: #64748b;
-    margin-top: 5px;
-}
-
-regNo::before { content: "Registration ID: "; font-weight: 600; color: #334155; }
-DateofBirth::before { content: "DOB: "; font-weight: 600; color: #334155; }
-
-/* Course List Styling */
+/* Individual Course Row */
 course {
-    display: block;
-    padding: 12px 0;
-    border-bottom: 1px dashed #e2e8f0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background: white;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;
+    transition: transform 0.2s;
 }
 
-course:last-child { border-bottom: none; }
+course:hover {
+    transform: scale(1.02);
+}
 
 courseName {
     display: block;
+    font-weight: 700;
+    color: #2d3748;
     font-size: 1.1rem;
-    font-weight: 600;
-    color: #334155;
+}
+
+/* Handling multiple courseNames if they exist */
+courseName + courseName {
+    font-weight: 400;
+    color: #718096;
+    font-size: 0.9rem;
+    margin-top: 5px;
 }
 
 creditHours {
-    display: inline-block;
-    background: #f1f5f9;
-    color: #475569;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    margin-top: 4px;
+    background: #764ba2;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(118, 75, 162, 0.3);
 }
-
-creditHours::after { content: " Credits"; }
