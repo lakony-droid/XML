@@ -4,8 +4,8 @@
 <employees>
     <employee id="emp_101" department="IT">
         <name>
-            <firstName>Alice</firstName>
-            <lastName>Muwanguzi</lastName>
+            <firstName>Emmanuel</firstName>
+            <lastName>Lakony</lastName>
         </name>
         <position>Systems Architect</position>
         <salary currency="USD">4500</salary>
@@ -13,8 +13,8 @@
 
     <employee id="emp_102" department="Finance">
         <name>
-            <firstName>David</firstName>
-            <lastName>Okello</lastName>
+            <firstName>Princess</firstName>
+            <lastName>Anati</lastName>
         </name>
         <position>Financial Analyst</position>
         <salary currency="UGX">5500000</salary>
@@ -22,8 +22,8 @@
 
     <employee id="emp_103" department="Marketing">
         <name>
-            <firstName>Sarah</firstName>
-            <lastName>Namono</lastName>
+            <firstName>Leah</firstName>
+            <lastName>Kamwine</lastName>
         </name>
         <position>Content Strategist</position>
         <salary currency="KES">120000</salary>
