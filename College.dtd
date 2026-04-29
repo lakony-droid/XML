@@ -1,0 +1,10 @@
+<!ELEMENT college (students+)>
+<!ELEMENT FullName (firstName,lastName)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT regNo (#PCDATA)>
+<!ELEMENT DateofBirth (#PCDATA)>
+<!ELEMENT courses (course+)>
+<!ELEMENT course (courseName,creditHours)>
+<!ELEMENT courseName (#PCDATA)>
+<!ELEMENT CreditHours (#PCDATA)>
