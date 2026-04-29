@@ -1,76 +1,40 @@
-/* 1. Reset and Background */
+/* Force root to act as a container */
 root {
-    display: block;
-    background: #eef2f7; /* Soft professional grey-blue */
-    padding: 50px 10px;
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    min-height: 100vh;
+    display: block !important;
+    background-color: #1a202c !important; /* Dark Mode Background */
+    padding: 50px 20px !important;
+    font-family: 'Segoe UI', Arial, sans-serif !important;
+    min-height: 100vh !important;
 }
 
-/* 2. User Card Container */
+/* Force users to act as a card */
 users {
-    display: block;
-    background: #ffffff;
-    max-width: 480px;
-    margin: 0 auto 25px auto;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    border-top: 5px solid #2563eb; /* Strong Blue Header */
-    position: relative;
+    display: block !important;
+    background: #ffffff !important;
+    max-width: 500px !important;
+    margin: 0 auto 30px auto !important;
+    padding: 25px !important;
+    border-radius: 15px !important;
+    border-top: 10px solid #4fd1c5 !important; /* Bright Teal top bar */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* 3. The User Name */
+/* Force each piece of text onto its own line */
+name, contact, address, email {
+    display: block !important;
+    margin: 10px 0 !important;
+    color: #2d3748 !important;
+}
+
 name {
-    display: block;
-    font-size: 1.75rem;
-    font-weight: 800;
-    color: #1e293b;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-    letter-spacing: -0.02em;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    color: #1a202c !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    padding-bottom: 5px !important;
 }
 
-/* 4. Contact Info Rows */
-contact, address, email {
-    display: block;
-    font-size: 0.95rem;
-    color: #475569;
-    margin: 12px 0;
-    padding-left: 30px;
-    position: relative;
-}
-
-/* 5. Modern Icons & Labels using Pseudo-elements */
-contact::before { content: "📱"; position: absolute; left: 0; }
-address::before { content: "📍"; position: absolute; left: 0; }
-email::before   { content: "✉️"; position: absolute; left: 0; }
-
-/* 6. Professional Labeling (Sub-text) */
-contact::after { content: "PHONE NUMBER"; }
-address::after { content: "LOCATION"; }
-email::after   { content: "EMAIL ADDRESS"; }
-
-contact::after, address::after, email::after {
-    display: block;
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: #94a3b8;
-    margin-top: 2px;
-    letter-spacing: 0.05em;
-}
-
-/* 7. Role Badge (from XML attributes) */
-/* This simulates a badge based on the 'role' attribute */
-users::after {
-    content: "Official Developer Account";
-    display: block;
-    margin-top: 15px;
-    font-size: 0.75rem;
-    background: #dbeafe;
-    color: #1e40af;
-    padding: 5px 12px;
-    border-radius: 6px;
-    width: fit-content;
-    font-weight: 600;
-}
+/* Adding labels to verify content */
+contact::before { content: "Phone: "; font-weight: bold; }
+address::before { content: "Location: "; font-weight: bold; }
+email::before   { content: "Email: "; font-weight: bold; }
