@@ -1,4 +1,4 @@
-<!ELEMENT college (students+)>
+<!ELEMENT college (students+,courses)>
 <!ELEMENT students (fullName,regNo,DateofBirth)>
 <!ELEMENT fullName (firstName,lastName)>
 <!ELEMENT firstName (#PCDATA)>
