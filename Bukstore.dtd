@@ -1,0 +1,9 @@
+<!ELEMENT bukstore (book)>
+<!ATTLIST book
+  isbn CDATA #REQUIRED
+  category CDATA #REQUIRED
+  <!ELEMENT book (title,author,price,stock)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ELEMENT stock (#PCDATA)>
