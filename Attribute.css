@@ -1,59 +1,76 @@
-/* Background for the whole page */
+/* 1. Reset and Background */
 root {
     display: block;
-    background-color: #f0f2f5;
-    padding: 50px 20px;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #eef2f7; /* Soft professional grey-blue */
+    padding: 50px 10px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     min-height: 100vh;
 }
 
-/* Individual User Card */
+/* 2. User Card Container */
 users {
     display: block;
-    background: white;
-    max-width: 450px;
-    margin: 0 auto 20px auto;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-left: 6px solid #007bff; /* Blue accent bar */
+    background: #ffffff;
+    max-width: 480px;
+    margin: 0 auto 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #2563eb; /* Strong Blue Header */
+    position: relative;
 }
 
-/* Name Heading */
+/* 3. The User Name */
 name {
     display: block;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #1c1e21;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: -0.02em;
 }
 
-/* Data Rows */
+/* 4. Contact Info Rows */
 contact, address, email {
     display: block;
     font-size: 0.95rem;
-    color: #4b4f56;
-    margin-bottom: 8px;
-    line-height: 1.5;
+    color: #475569;
+    margin: 12px 0;
+    padding-left: 30px;
+    position: relative;
 }
 
-/* Adding Labels and Icons */
-contact::before { content: "📞 Phone: "; font-weight: bold; color: #007bff; }
-address::before { content: "📍 Location: "; font-weight: bold; color: #007bff; }
-email::before   { content: "✉️ Email: "; font-weight: bold; color: #007bff; }
+/* 5. Modern Icons & Labels using Pseudo-elements */
+contact::before { content: "📱"; position: absolute; left: 0; }
+address::before { content: "📍"; position: absolute; left: 0; }
+email::before   { content: "✉️"; position: absolute; left: 0; }
 
-/* Tooltip style for Role */
+/* 6. Professional Labeling (Sub-text) */
+contact::after { content: "PHONE NUMBER"; }
+address::after { content: "LOCATION"; }
+email::after   { content: "EMAIL ADDRESS"; }
+
+contact::after, address::after, email::after {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #94a3b8;
+    margin-top: 2px;
+    letter-spacing: 0.05em;
+}
+
+/* 7. Role Badge (from XML attributes) */
+/* This simulates a badge based on the 'role' attribute */
 users::after {
-    content: "Position: Developer";
-    display: inline-block;
-    background: #e7f3ff;
-    color: #1877f2;
-    padding: 4px 12px;
-    border-radius: 20px;
+    content: "Official Developer Account";
+    display: block;
+    margin-top: 15px;
     font-size: 0.75rem;
-    font-weight: bold;
-    margin-top: 10px;
-    text-transform: uppercase;
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 5px 12px;
+    border-radius: 6px;
+    width: fit-content;
+    font-weight: 600;
 }
