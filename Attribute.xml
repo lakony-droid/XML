@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!DOCTYPE attribute SYSTEM "Attribute.dtd"
+  <!DOCTYPE root SYSTEM "Attribute.dtd"
 <root>
 <users id="U5599" role="Developer">
   <name>Chezegwa</name>
