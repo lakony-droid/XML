@@ -1,0 +1,59 @@
+/* Container for the entire bookstore */
+bokstore {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+}
+
+/* Individual book card style */
+book {
+    display: block;
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 5px solid #2c3e50;
+    max-width: 600px;
+}
+
+/* Titles act as the header */
+title {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+/* Author styling */
+author {
+    display: block;
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Price and Stock container styling */
+price, stock {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 1.1em;
+}
+
+price:before {
+    content: "Price: $";
+    font-weight: bold;
+    color: #27ae60;
+}
+
+stock:before {
+    content: "In Stock: ";
+    font-weight: bold;
+    color: #e67e22;
+}
+
