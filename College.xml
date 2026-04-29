@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE college SYSTEM "College 
+<!DOCTYPE college SYSTEM "College.dtd">
+<college>
+  <students>
+    <fullName>
+      <firstName>Emmanuek</firstName>
+      <lastName>Chezegwa</lastName>
+    </fullName>
+    <regNo>U5599</regNo>
+    <DateofBirth>05/05/2004</DateofBirth>
+  </students>
+
+  <courses>
+  <course>
+    <courseName>DSE</courseName>
+    <courseName>BAAE</courseName>
+    <creditHours>4</creditHours>
+  </course>
+  </courses>
+</college>
