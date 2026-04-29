@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore SYSTEM "bookstore.dtd">
+
+<bookstore>
+    <book isbn="978-0141036144" category="fiction">
+        <title>1984</title>
+        <author>George Orwell</author>
+        <price>15.99</price>
+        <stock>24</stock>
+    </book>
+    
+    <book isbn="978-0345513632" category="non-fiction">
+        <title>The Immortal Life of Henrietta Lacks</title>
+        <author>Rebecca Skloot</author>
+        <price>12.50</price>
+        <stock>10</stock>
+    </book>
+
+    <book isbn="978-0345803481" category="biography">
+        <title>Steve Jobs</title>
+        <author>Walter Isaacson</author>
+        <price>18.00</price>
+        <stock>5</stock>
+    </book>
+</bookstore>
