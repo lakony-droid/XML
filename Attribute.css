@@ -1,40 +1,39 @@
-/* Force root to act as a container */
+/* style.css */
+
 root {
     display: block !important;
-    background-color: #1a202c !important; /* Dark Mode Background */
-    padding: 50px 20px !important;
-    font-family: 'Segoe UI', Arial, sans-serif !important;
-    min-height: 100vh !important;
+    background-color: #f4f7f9 !important;
+    padding: 40px 20px !important;
+    font-family: sans-serif !important;
 }
 
-/* Force users to act as a card */
 users {
     display: block !important;
     background: #ffffff !important;
-    max-width: 500px !important;
-    margin: 0 auto 30px auto !important;
-    padding: 25px !important;
-    border-radius: 15px !important;
-    border-top: 10px solid #4fd1c5 !important; /* Bright Teal top bar */
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3) !important;
-}
-
-/* Force each piece of text onto its own line */
-name, contact, address, email {
-    display: block !important;
-    margin: 10px 0 !important;
-    color: #2d3748 !important;
+    max-width: 400px !important;
+    margin: 0 auto 20px auto !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    border-top: 5px solid #007bff !important;
 }
 
 name {
-    font-size: 24px !important;
+    display: block !important;
+    font-size: 1.5rem !important;
     font-weight: bold !important;
-    color: #1a202c !important;
-    border-bottom: 2px solid #e2e8f0 !important;
-    padding-bottom: 5px !important;
+    color: #333 !important;
+    margin-bottom: 10px !important;
 }
 
-/* Adding labels to verify content */
-contact::before { content: "Phone: "; font-weight: bold; }
-address::before { content: "Location: "; font-weight: bold; }
-email::before   { content: "Email: "; font-weight: bold; }
+contact, address, email {
+    display: block !important;
+    font-size: 0.9rem !important;
+    color: #666 !important;
+    margin-top: 5px !important;
+}
+
+/* Adding labels so you can see it's working */
+contact::before { content: "Phone: " !important; font-weight: bold !important; }
+address::before { content: "Loc: " !important; font-weight: bold !important; }
+email::before   { content: "Email: " !important; font-weight: bold !important; }
