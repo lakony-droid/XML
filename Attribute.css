@@ -1,49 +1,52 @@
-root{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    padding: 30px;
-    border: 1px solid rgba(71, 0, 0, 0.662);
-    background-color: rgba(139, 159, 218, 0.626);
-    width: 400px;
+root {
     display: block;
-    margin: 10px;
+    background-color: #f0f2f5;
+    padding: 50px;
+    font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
-root> users{
- display: block;
- color: rgba(73, 0, 141, 0.711);
- font-weight: bold;
- font-size: 120%;
+users {
+    display: block;
+    background: white;
+    max-width: 450px;
+    margin: 0 auto 25px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-top: 6px solid #007bff; /* Blue accent for Developers */
 }
 
-users> name{
- display: block;
- color: rgba(73, 0, 141, 0.711);
- margin-top: 9px;
- font-size: 100%;
+name {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 12px;
+    text-transform: capitalize;
 }
 
-users> contact{
+contact, address, email {
     display: block;
-    color: rgba(144, 23, 2, 0.987);
-    margin-top: 10px;
-    font-size: 100%;
+    font-size: 0.9rem;
+    color: #4a5568;
+    margin-top: 8px;
+    padding-left: 5px;
 }
 
-users> address{
+/* Icons and Labels */
+contact::before { content: "📱 "; }
+address::before { content: "📍 "; }
+email::before   { content: "✉️ "; }
+
+/* Sub-labels for clarity */
+contact::after, address::after, email::after {
     display: block;
-    color: rgba(73, 0, 141, 0.711);
-    margin-top: 10px;
-    font-size: 100%;
+    font-size: 0.7rem;
+    color: #a0aec0;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 2px;
 }
-users> email{
-    display: block;
-    color: rgba(73, 0, 141, 0.711);
-    margin-top: 10px;
-    font-size: 100%;
-}
-users[id]::before{content: " ("attr "id" ")";)
-name::before{content: "Name: ";}
-contact::before{content: "Contact: ";}
-address::before{content: "Address: ";}
-email::before{content: "Email: ";}
+contact::after { content: "Phone Number"; }
+address::after { content: "Location"; }
+email::after   { content: "Email Address"; }
