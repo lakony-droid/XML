@@ -1,0 +1,36 @@
+employees {
+        display: block;
+            background-color: #f0f0f0;
+                padding: 20px;
+                    font-family: sans-serif;
+                    }
+
+                    employee {
+                        display: block;
+                            background-color: white;
+                                margin-bottom: 15px;
+                                    padding: 15px;
+                                        border: 1px solid #ccc;
+                                            border-radius: 8px;
+                                            }
+
+                                            name {
+                                                display: block;
+                                                    font-size: 18px;
+                                                        font-weight: bold;
+                                                            color: #333;
+                                                            }
+
+                                                            position {
+                                                                display: block;
+                                                                    color: #666;
+                                                                        margin: 5px 0;
+                                                                        }
+
+                                                                        salary {
+                                                                            display: block;
+                                                                                color: green;
+                                                                                    font-weight: bold;
+                                                                                    }
+                                                                                    
+}
