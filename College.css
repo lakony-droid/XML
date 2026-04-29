@@ -1,66 +1,93 @@
-college{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    padding: 30px;
-    border: 1px solid rgba(71, 0, 0, 0.662);
-    background-color: rgba(139, 159, 218, 0.626);
-    width: 400px;
+college {
     display: block;
-    margin: 10px;
+    background-color: #f8fafc;
+    font-family: 'Inter', -apple-system, sans-serif;
+    padding: 40px 20px;
+    color: #1e293b;
 }
 
-college> students{
- display: block;
- color: rgba(73, 0, 141, 0.711);
- font-weight: bold;
- font-size: 120%;
-}
-
-students> fullName{
- display: block;
- color: rgba(73, 0, 141, 0.711);
- margin-top: 9px;
- font-size: 100%;
-}
-
-fullName> firstName{
+/* Section Containers (Students & Courses) */
+students, courses {
     display: block;
-    color: rgba(144, 23, 2, 0.987);
-    margin-top: 10px;
-    font-size: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-fullName> lastName{
+/* Header for Sections */
+students::before {
+    content: "Student Profile";
     display: block;
-    color: rgba(73, 0, 141, 0.711);
-    margin-top: 10px;
-    font-size: 100%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #6366f1;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
 }
 
-students> DateofBirth{
+courses::before {
+    content: "Enrolled Courses";
     display: block;
-    color: rgba(73, 0, 141, 0.711);
-    margin-top: 10px;
-    font-size: 100%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #0ea5e9;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
 }
 
-college> courses{
+/* Full Name Styling */
+fullName {
+    display: flex;
+    gap: 8px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+firstName, lastName { display: inline; }
+
+/* Student Details */
+regNo, DateofBirth {
     display: block;
-    color: rgba(73, 0, 141, 0.711);
-    margin-top: 10px;
-    font-size: 100%;
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-top: 5px;
 }
 
-fullName> lastName{
+regNo::before { content: "Registration ID: "; font-weight: 600; color: #334155; }
+DateofBirth::before { content: "DOB: "; font-weight: 600; color: #334155; }
+
+/* Course List Styling */
+course {
     display: block;
-    color: rgba(73, 0, 141, 0.711);
-    margin-top: 10px;
-    font-size: 100%;
+    padding: 12px 0;
+    border-bottom: 1px dashed #e2e8f0;
 }
 
-firstName::before{content: "First Name: ";}
-lastName::before{content: "Last Name: ";}
-regNo::before{content: "Reg No: ";}
-DateofBirth::before{content: "Date of Birth: ";}
-courseName::before{content: "Course Name: ";}
-creditHours::before{content: "Credit Hours: ";}
+course:last-child { border-bottom: none; }
+
+courseName {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+creditHours {
+    display: inline-block;
+    background: #f1f5f9;
+    color: #475569;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+
+creditHours::after { content: " Credits"; }
