@@ -1,39 +1,33 @@
 /* style.css */
 
+/* This makes the root a grey background */
 root {
-    display: block !important;
-    background-color: #f4f7f9 !important;
-    padding: 40px 20px !important;
-    font-family: sans-serif !important;
+    display: block;
+    background-color: #f0f0f0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
+/* This creates the white cards for each user */
 users {
-    display: block !important;
-    background: #ffffff !important;
-    max-width: 400px !important;
-    margin: 0 auto 20px auto !important;
-    padding: 20px !important;
-    border-radius: 10px !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
-    border-top: 5px solid #007bff !important;
+    display: block;
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
+/* This forces the names and info onto new lines */
 name {
-    display: block !important;
-    font-size: 1.5rem !important;
-    font-weight: bold !important;
-    color: #333 !important;
-    margin-bottom: 10px !important;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    color: blue;
 }
 
 contact, address, email {
-    display: block !important;
-    font-size: 0.9rem !important;
-    color: #666 !important;
-    margin-top: 5px !important;
+    display: block;
+    margin-top: 5px;
+    color: #333;
 }
-
-/* Adding labels so you can see it's working */
-contact::before { content: "Phone: " !important; font-weight: bold !important; }
-address::before { content: "Loc: " !important; font-weight: bold !important; }
-email::before   { content: "Email: " !important; font-weight: bold !important; }
