@@ -1,0 +1,9 @@
+<!ELEMENT bookstore (book+)>
+<!ELEMENT book (title, author, price, stock)>
+<!ATTLIST book 
+    isbn CDATA #REQUIRED
+    category (fiction | non-fiction | biography) #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT stock (#PCDATA)>
