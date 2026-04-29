@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!DOCTYPE root SYSTEM "Attribute.dtd"
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!DOCTYPE root SYSTEM "Attribute.dtd">
 <root>
-<users id="U5599" role="Developer">
-  <name>Chezegwa</name>
-<contact>+256760838879</contact>
-  <address>kololo</address>
-  <email>lakonyemmanuel92@gmail.com</email>
-</users>
-<users id="U5549" role="Developer">
-  <name>Princess</name>
-<contact>+256760457739</contact>
-  <address>Makindye</address>
-  <email>myprincess@gmail.com</email>
-</users>
+    <users id="U5599" role="Developer">
+        <name>Chezegwa</name>
+        <contact>+256760838879</contact>
+        <address>kololo</address>
+        <email>lakonyemmanuel192@gmail.com</email>
+    </users>
+    <users id="U5549" role="Developer">
+        <name>Princess</name>
+        <contact>+256760457739</contact>
+        <address>Makindye</address>
+        <email>myprincess@gmail.com</email>
+    </users>
 </root>
