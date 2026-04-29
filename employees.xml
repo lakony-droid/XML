@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employees SYSTEM "employees.dtd">
+
+<employees>
+    <employee id="emp_101" department="IT">
+        <name>
+            <firstName>Alice</firstName>
+            <lastName>Muwanguzi</lastName>
+        </name>
+        <position>Systems Architect</position>
+        <salary currency="USD">4500</salary>
+    </employee>
+
+    <employee id="emp_102" department="Finance">
+        <name>
+            <firstName>David</firstName>
+            <lastName>Okello</lastName>
+        </name>
+        <position>Financial Analyst</position>
+        <salary currency="UGX">5500000</salary>
+    </employee>
+
+    <employee id="emp_103" department="Marketing">
+        <name>
+            <firstName>Sarah</firstName>
+            <lastName>Namono</lastName>
+        </name>
+        <position>Content Strategist</position>
+        <salary currency="KES">120000</salary>
+    </employee>
+</employees>
