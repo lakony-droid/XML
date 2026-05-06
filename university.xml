@@ -1,1 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:noNamespaceSchemaLocation="university.xsd">
 
+  <department>
+    <deptName>Computer Science</deptName>
+    <deptHead>Dr. Princess</deptHead>
+    <courses>
+      <course>
+        <courseName>Introduction to XML</courseName>
+        <instructor>Prof. Leah</instructor>
+        <credits>3</credits>
+      </course>
+      <course>
+        <courseName>Database Management</courseName>
+        <instructor>Dr. Joseph</instructor>
+        <credits>4</credits>
+      </course>
+    </courses>
+  </department>
+
+  <department>
+    <deptName>Mathematics</deptName>
+    <deptHead>Dr. Robert</deptHead>
+    <courses>
+      <course>
+        <courseName>Calculus II</courseName>
+        <instructor>Prof. Alice</instructor>
+        <credits>4</credits>
+      </course>
+      <course>
+        <courseName>Linear Algebra</courseName>
+        <instructor>Dr. David</instructor>
+        <credits>3</credits>
+      </course>
+    </courses>
+  </department>
+
+</university>
