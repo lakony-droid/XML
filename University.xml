@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:noNamespaceSchemaLocation="university.xsd">
+
+    <department>
+        <dept_name>Computer Science</dept_name>
+        <dept_head>Dr. Alan Turing</dept_head>
+        
+        <course>
+            <course_name>Database Systems</course_name>
+            <instructor>Prof. Smith</instructor>
+            <credits>4</credits>
+        </course>
+        
+        <course>
+            <course_name>Web Development</course_name>
+            <instructor>Ms. Johnson</instructor>
+            <credits>3</credits>
+        </course>
+    </department>
+
+    <department>
+        <dept_name>Mathematics</dept_name>
+        <dept_head>Dr. Katherine Johnson</dept_head>
+        
+        <course>
+            <course_name>Calculus I</course_name>
+            <instructor>Dr. Brown</instructor>
+            <credits>4</credits>
+        </course>
+        
+        <course>
+            <course_name>Linear Algebra</course_name>
+            <instructor>Prof. White</instructor>
+            <credits>3</credits>
+        </course>
+    </department>
+
+</university>
