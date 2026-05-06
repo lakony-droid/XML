@@ -2,5 +2,8 @@
 <note xmlns="https://www.w3schools.com"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="SchemaExampleOne.xsd">
-
+  <to>Princess</to>
+  <from>Chezegwa</from>
+  <heading>Saturday</heading>
+  <body>Dont forget to come for me this weekend and we go together to Kireka Recreation Center for some recreation and swimming too. There will be games and free food.</body>
 </note>
